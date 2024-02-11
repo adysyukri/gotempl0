@@ -1,0 +1,8 @@
+package templates
+
+templ Hello(name string) {
+	<p class="text-sky-800 hover:italic hover:cursor-pointer text-2xl">Hello, { name }</p>
+	@Input("text", false)
+	@Input("number", true)
+	@Input("file", false)
+}

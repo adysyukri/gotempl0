@@ -1,0 +1,17 @@
+package templates
+
+css blockClass() {
+	display: block;
+	background-color: magenta;
+	width: 500px;
+}
+
+//comment
+templ Input(t string, block bool) {
+	<input
+		type={ t }
+		if block {
+			class={ blockClass }
+		}
+	/>
+}
